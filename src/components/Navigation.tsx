@@ -12,10 +12,7 @@ const mainMenuItems = [
   { label: "KURAK", href: "/kurak" },
 ];
 
-const secondaryMenuItems = [
-  { label: "CONTACT", href: "/contact" },
-  { label: "IMPRINT", href: "/imprint" },
-];
+const secondaryMenuItems = [{ label: "CONTACT", href: "/contact" }];
 
 export default function Navigation() {
   const pathname = usePathname();
@@ -53,7 +50,7 @@ export default function Navigation() {
       {/* Social icons */}
       <div className="flex gap-4 mt-6">
         <a
-          href="https://instagram.com"
+          href="https://instagram.com/egecam.jpg"
           target="_blank"
           rel="noopener noreferrer"
           className="text-foreground hover:text-muted transition-colors"
@@ -76,7 +73,7 @@ export default function Navigation() {
           </svg>
         </a>
         <a
-          href="mailto:hello@example.com"
+          href="mailto:hey@egecam.dev"
           className="text-foreground hover:text-muted transition-colors"
           aria-label="Email"
         >

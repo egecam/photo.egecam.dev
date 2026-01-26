@@ -77,3 +77,60 @@ body {
 .photo-meta-location {
   font-weight: 400;
 }
+
+/* Gallery styles */
+.gallery-image {
+  transition: opacity 0.3s ease;
+}
+
+.gallery-image-loading {
+  opacity: 0;
+}
+
+.gallery-image-loaded {
+  opacity: 1;
+}
+
+/* Navigation arrows */
+.gallery-nav-arrow {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.gallery-nav-arrow:hover {
+  transform: scale(1.1);
+}
+
+/* Thumbnail grid */
+.thumbnail-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.thumbnail-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Skeleton loading animation */
+@keyframes skeleton-pulse {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.skeleton {
+  animation: skeleton-pulse 1.5s ease-in-out infinite;
+  background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+}
+
+/* Custom cursors for navigation areas */
+.cursor-w-resize {
+  cursor: w-resize;
+}
+
+.cursor-e-resize {
+  cursor: e-resize;
+}

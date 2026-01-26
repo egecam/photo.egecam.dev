@@ -18,6 +18,9 @@ const libreBaskerville = Libre_Baskerville({
 export const metadata: Metadata = {
   title: "Ege Çam | Photography",
   description: "Photography portfolio by Ege Çam",
+  icons: {
+    icon: "/avatar-64.png",
+  },
 };
 
 export default function RootLayout({
