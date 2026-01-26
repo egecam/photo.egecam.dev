@@ -1,13 +1,12 @@
-export default function Home() {
+export default function WorksBW() {
   return (
     <div className="h-full flex flex-col">
       {/* Featured Photo */}
       <div className="flex-grow flex items-start">
         <div className="relative w-full max-w-4xl">
-          {/* Placeholder for featured photo */}
           <div className="aspect-[4/3] bg-gray-300 flex items-center justify-center">
             <span className="text-gray-500 text-sm tracking-wider uppercase">
-              Featured Photo
+              Photo
             </span>
           </div>
         </div>
